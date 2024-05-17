@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.task {
+  margin: 50px;
+}
+
+.task1 {
+  background-color: rgb(144, 144, 233);
+  width: 60%;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 2s ease-in-out;
+}
+
+.iphone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.iphone p {
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.iphone img {
+  width: 15%;
+  padding-top: 10px;
+}
+.iphoneImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  width: 20%;
+}
+
+/*second task*/
+
+.task2 {
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  margin: auto;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  transition: background-color 2s ease-in-out;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hello p {
+  width: 50%;
+  padding: 15px 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: color 2s ease-in-out;
+}
+.hello h1 {
+  padding-top: 15px;
+  color: rgb(0, 0, 0);
+  transition: color 2s ease-in-out;
+}
+.icon {
+  margin-left: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/*Third Task*/
+
+.task3 {
+  width: 60%;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+
+.label {
+  background-color: rgb(88, 180, 104);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  transition: 0.7s;
+}
+
+.label::after {
+  content: "˅";
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  transition: transform 0.2s;
+}
+
+.label.active::after {
+  content: "˄";
+}
+
+.content {
+  background-color: beige;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: none;
+  overflow: hidden;
+}
+
+/*task4*/
+.task4 {
+  background-color: rgb(49, 20, 139);
+  width: 60%;
+  margin: auto;
+  border: none;
+  border-width: 2px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 50px; 
+}
+
+.task4 h2 {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.starRate {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 30px;
+  color: rgb(203, 199, 199);
+  transition: color 0.3s;
+}
+.star.hover,
+.star.selected {
+  color: gold;
+}
